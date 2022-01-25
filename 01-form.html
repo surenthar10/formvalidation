@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+    label {
+        display: inline-block;
+       min-width: 120px;
+       text-transform: capitalize;
+    }
+
+    div{
+        margin-bottom: 20px;
+    }
+    .error{
+        border-color: red;
+        outline: 1px solid red;
+    }
+    .suc{
+        border-color: green;
+        outline: 1px solid green;
+    }
+    </style>
+
+</head>
+
+ 
+<body>
+     <h2>create account</h2>
+    <form action="">
+        <div>
+            <label for="fname">first name</label>
+            <input type="text" name="fname" id="fname">
+        </div>
+        <div>
+            <label for="mname"> middle name</label>
+            <input  type="text" name="mname" id="mname">
+        </div>
+        <div>
+            <label for="lname">last name</label>
+            <input type="text" name="lname" id="lname">
+        </div>
+        <div>
+            <label for="number">number</label>
+            <select name="number" id="">
+                <option value="+91"> ind - +91</option>
+                <option value="+09"> pak - +09</option>
+            </select>
+            <input type="number" name="number" id="number">
+        </div>
+        <div>
+            <label for="email">email</label>
+            <input type="text" name="email" id="email">
+        </div>
+        <div>
+            <label for="password">password</label>
+            <input type="password" name="password" id="password">
+        </div>
+        <div>
+            <label for="cpass">conform password</label>
+            <input type="password" name="c-pass" id="cpass">
+        </div> 
+        <div>
+            <label for="gender">gender</label>
+            <input type="radio"  name="gender" id="male" value="ma">
+            <label for="gender">male</label> 
+            <input type="radio"  name="gender" id="female" value="fema">
+            <label for="gender">female</label>
+        </div>
+        <div>
+            <label for="dob">date of birth</label>
+            <input type="date" name="dob" id="dob">
+        </div>
+        <div>
+            <label for="country">country</label>
+            <select name="country" id="country">
+                <option value="">select country</option>
+                <option value="ina">india</option>
+                <option value="wes">westindians</option>
+                <option value="sou">south africa</option>
+            </select>
+        </div>
+        <div>
+            <label for="bio">Bio</label>
+            <textarea type ="text" name="bio" id="bio"></textarea>
+
+        </div>
+
+    <input type="button" value="submit" onclick="onSubmit()">
+        
+    </form> 
+
+    <script src="01-form.js"></script>
+</body>
+
+</html>
